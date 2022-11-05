@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.container{
+    background-color:hsl(217, 54%, 11%);
+    max-width: 100vw;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    height: 400px;
+    width: 250px;
+    
+}
+.card__img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    /* margin:auto; */
+}
+.card__content{
+    margin: 1rem;
+    position: relative;
+}
+.card__content-text{
+    margin-top: .5rem;
+}
+.equilibrium-text:hover{
+    color: hsl(178, 100%, 50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avatar-container{
+    margin-top: 0.5rem;
+}
+.avatar{
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 0.5rem;
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+    margin-left: .2rem;
+}
+.hr{
+    opacity:0.2;
+}
+.card__img--Hover{
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.jules:hover{
+    color: hsl(178, 100%, 50%);
+}
+.hide{
+    display: none;
+    background-color: hsl(178, 100%, 50%);
+     
+}
+.card__img:hover + .hide{
+    
+    display: grid;
+    place-content: center;
+    position: absolute;
+    width: 100%;
+    height:62%;
+    border-radius: 3%;
+    background-size: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    opacity: 50%; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgView{
+    z-index: 1000;
+    opacity: 100%;
 }
